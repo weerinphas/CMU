@@ -2,6 +2,7 @@
 Homework03:
 Make it the GAME: "Take x sticks from the pile with smart computer"
 Author: Weerinphas Chimnam
+Student ID: 640631127
 Date July 27,2021
 Version1
 
