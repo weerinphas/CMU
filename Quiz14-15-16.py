@@ -25,23 +25,20 @@ print(M[2,:]) #select the third row only,first column: 7
 print(M[2:]) #select from the third row,first column: 7 to the last row
 
 # Quiz16
-column_num = int(input("Number of column: "))
-row_num = int(input("Number of row: "))
-listResult = []
+n = int(input("Number of column: "))
+m = int(input("Number of row: "))
+matrixResult = np.array([])
 
-for i in range(0, row_num):
-    for j in range(0, column_num):
-        if i < j:
+for i in range(0, m):
+    for j in range(0, n):
+        if i < j and j != m:
             value = 0.
-            listResult.append(value)
-        elif i == j:
+        elif i == j or j == m:
             value = 1.
-            listResult.append(value)
         else:
             value = -1.
-            listResult.append(value)
+        matrixResult = np.append(matrixResult,value)
 
-matrixResult = np.array(listResult)
-matrixResult_shaped = np.reshape(matrixResult, (row_num, column_num))
+matrixResult_shaped = np.reshape(matrixResult, (m, n))
 print(matrixResult_shaped)
 
