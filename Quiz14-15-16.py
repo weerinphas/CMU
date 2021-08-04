@@ -1,3 +1,11 @@
+"""
+Quiz 14-15-16:
+Topic : Matrix
+Author: Weerinphas Chimnam
+Student ID: 640631127
+Date August 4,2021
+
+"""
 
 import numpy as np
 from scipy.linalg import solve
